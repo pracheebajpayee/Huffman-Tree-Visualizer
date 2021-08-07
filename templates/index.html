@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huffman Code</title>
+
+    <link rel = "stylesheet" type = "text/css" href = "{{url_for('static', filename = 'styles/styles.css')}}">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <textarea id = "textArea" class = "textArea" placeholder="Enter text here." rows = "4" cols = "50"></textarea>
+        <br>
+        <button id = "runButton" class = "runButton" type = "button" onclick="startHuffman()">Generate Huffman Tree</button>
+    </form>
+
+    <script src = "{{url_for('static', filename = 'js/sketch.js')}}"></script>
+    <script src = "{{url_for('static', filename = 'js/objects.js')}}"></script>
+</body>
+</html>
