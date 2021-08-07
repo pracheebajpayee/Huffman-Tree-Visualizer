@@ -1,0 +1,64 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+canvas{
+    display:block;
+    position: absolute;
+    inset: 0 0;
+    z-index: -1;
+}
+
+.textArea{
+    margin-top: 25px;
+    padding: 15px;
+    border: none;
+    opacity: 1;
+    background-color: #000f38;
+    color: white;
+    resize: none;
+    font-family: 'JetBrains Mono', monospace;
+    transition: 0.3s cubic-bezier(.65,.05,.36,1);
+}
+
+.textArea:focus{
+    outline: none;
+    transform: scale(1.03);
+}
+
+.textArea::placeholder{
+    color: rgb(202, 210, 255);
+}
+
+.runButton{
+    padding: 15px 25px;
+    border: none;
+    opacity: 1;
+    background-color: royalblue;
+    font-family: 'JetBrains Mono', monospace;
+    transition: 0.3s cubic-bezier(.65,.05,.36,1);
+    color: seashell;
+}
+
+.runButton:hover{
+    transform: scale(1.015);
+}
+
+.runButton:active{
+    background-color: rgb(76, 240, 223);
+}
+
+form{
+    display: grid;
+    width: 75vw;
+    grid-template-rows: auto 15px auto;
+    z-index: 5;
+}
+
+.hideTextArea{
+    opacity: 0;
+}
